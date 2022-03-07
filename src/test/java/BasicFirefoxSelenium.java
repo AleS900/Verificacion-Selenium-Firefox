@@ -17,7 +17,7 @@ public class BasicFirefoxSelenium {
 
     @Test
     public void goToFirefox() throws InterruptedException{
-        firefoxDriver.findElement(By.xpath("/html/body/main/section/div/div/div[3]/form/div[1]/div/input")).sendKeys("test@gmail.com");
+        firefoxDriver.findElement(By.id("email")).sendKeys("test@gmail.com");
         firefoxDriver.findElement(By.xpath("/html/body/main/section/div/div/div[3]/form/div[2]/div/input")).sendKeys("test123");
         Thread.sleep(5000);
         firefoxDriver.findElement(By.xpath("/html/body/main/section/div/div/div[3]/form/div[3]/button")).click();
